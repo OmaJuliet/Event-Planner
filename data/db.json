@@ -1,0 +1,20 @@
+{
+  "blogs": [
+    {
+      "title": "David's wedding party",
+      "body": "The wedding ceremony of David, my cousin. ",
+      "location": "White View Hotel, New York City.",
+      "date": "2022-12-15",
+      "selectedImage": "",
+      "id": 16
+    },
+    {
+      "title": "Baby Shower",
+      "body": "Baby shower of Brielle",
+      "location": "Ikeja",
+      "date": "2022-10-12",
+      "selectedImage": null,
+      "id": 17
+    }
+  ]
+}
