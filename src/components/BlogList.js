@@ -33,13 +33,13 @@ const BlogList = ({ blogs, title }) => {
                 <figure class="flex items-center flex-wrap pb-4 mb-2 border-b-2 border-gray-100 mt-auto w-full">
                   <Link to={`/blogs/${blog.id}`}><motion.button whileHover={{ scale: 1.1, textShadow: "0px 0px 8px rgba(99 102 241)", boxShadow: "0px 0px 8px rgba(99 102 241)" }} className="mx-auto text-white bg-indigo-500 border-0 px-2 py-0 focus:outline-none hover:bg-indigo-600 rounded text-lg">Full Blog</motion.button></Link>
                 </figure>
-                <a class="inline-flex items-center">
+                <figure class="inline-flex items-center">
                   <img alt="blog" src={pic} class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center" />
                   <span class="flex-grow flex flex-col pl-4">
                     <span class="font-medium text-gray-900">{blog.author}</span>
                     <span class="text-gray-500 text-xs tracking-widest mt-0.5">{blog.date}</span>
                   </span>
-                </a>
+                </figure>
               </article>
             ))}
           </section>
