@@ -23,7 +23,7 @@ const BlogList = ({ blogs, title }) => {
   return (
     <>
       <section class="text-gray-600 body-font overflow-hidden">
-        <p className="text-center text-base text-indigo-400">Blogs</p>
+        <p className="text-center text-base text-indigo-500">Blogs</p>
         <motion.div variants={sectionVariants} initial="hidden" animate="visible" exit="exit" class="container px-5 py-8 mx-auto">
           <section class="flex flex-wrap -m-12">
             {blogs.map((blog) => (
