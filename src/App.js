@@ -4,7 +4,7 @@ import Page from './components/Page';
 import { Route, Switch, useLocation } from 'react-router-dom';
 // BrowserRouter as Router
 import Create from './components/Create';
-import EventDetails from './components/EventDetails';
+import BlogDetails from './components/BlogDetails';
 import NotFound from './components/NotFound';
 import { AnimatePresence } from 'framer-motion';
 
@@ -25,14 +25,14 @@ function App() {
               <Route exact path="/" >
                 <Page />
               </Route>
-              <Route exact path="/eventlist" >
+              <Route exact path="/bloglist" >
                 <Home />
               </Route>
               <Route path="/create" >
                 <Create />
               </Route>
               <Route path="/blogs/:id" >
-                <EventDetails />
+                <BlogDetails />
               </Route>
               <Route path="*">
                 <NotFound />

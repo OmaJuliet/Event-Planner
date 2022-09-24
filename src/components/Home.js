@@ -1,5 +1,5 @@
 import React from 'react'
-import EventList from './EventList';
+import BlogList from './BlogList';
 import useFetch from '../useFetch';
 import { motion } from 'framer-motion';
 
@@ -21,6 +21,7 @@ const loaderVariants = {
     }
   }
 }
+
 const Home = () => {
   const { data: blogs, isPending, error } = useFetch('http://localhost:8000/blogs')
 
@@ -28,9 +29,9 @@ const Home = () => {
   return (
     <section className="home">
         { error && <p className="flex flex-col text-center w-full mb-12">{ error }</p> }  
-        { isPending && <p className="flex flex-col text-center w-full mb-12">Fetching events...</p>}
+        { isPending && <p className="flex flex-col text-center w-full mb-12">Loading blogs...</p>}
         { isPending && <motion.div variants={loaderVariants} animate="animationOne" className="flex flex-col text-center rounded-full w-4 h-4 mx-auto mt-2 lg:mt-2 bg-indigo-500 rounded-full"></motion.div>}
-        {blogs && <EventList blogs={blogs} title="My Events"/> }  
+        {blogs && <BlogList blogs={blogs} title="My Blogs"/> }  
     </section>
   )
 }
